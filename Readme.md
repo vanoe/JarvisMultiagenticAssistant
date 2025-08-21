@@ -1,76 +1,85 @@
-# Jarvis – Multiagentic Assistant
+# 🤖 Jarvis – Multiagentic Assistant
 
-## Short Intro
-
-Jarvis is a next-generation multi-agent conversational assistant. Unlike most AI assistants that act as a single agent, Jarvis can coordinate multiple specialized agents—such as calendar, summarizer, and memory—through a central reasoning system.
-
-What makes it unique is its **emotional intelligence**: by analyzing the tone of your voice, Jarvis adapts its responses to match your mood, making conversations feel more natural and human.
-
-Thanks to **persistent memory**, Jarvis can recall past interactions and personalize future ones, making it useful for productivity, customer support, and smart device applications.
+**Next-generation multi-agent conversational assistant**  
+Unlike typical single-agent AI assistants, Jarvis coordinates **multiple specialized agents**—such as calendar, summarizer, and memory—through a central reasoning system.
 
 ---
 
-## Full Description
+## 🌟 Key Features
 
-### Problem Solved
-
-Most AI assistants operate as single-agent systems with limited emotional intelligence and poor task coordination. They often fail to manage complex conversations, switch between tasks, or respond appropriately to a user’s emotional tone. This limits their usefulness in dynamic, real-world scenarios that require both functionality and empathy.
-
----
-
-### Solution & Achievements
-
-Jarvis is a multiagent conversational assistant built on top of Hume AI. It combines emotional intelligence, task-specific agents, and real-time voice interaction to create a more adaptive and human-like assistant.
-
-Jarvis coordinates specialized agents (e.g., calendar, summarizer, memory) through a central reasoning system and adapts its responses based on emotional cues in the user's voice.
-
-**Key Achievements:**
-
-- Built multiagent orchestration using LangChain and Mistral for real-time reasoning and delegation
-- Integrated Hume’s Empathic Voice API to adapt behavior and tone based on detected emotions
-- Enabled full voice interface with Google STT and TTS for low-latency interaction
-- Achieved end-to-end latency < 400ms using WebRTC for audio streaming
-- Implemented persistent memory using PostgreSQL for long-term context and personalization
+- **Emotional Intelligence:** Analyzes voice tone to adapt responses, making conversations feel natural and human
+- **Persistent Memory:** Recalls past interactions to personalize future responses
+- **Multiagent Coordination:** Handles multiple tasks simultaneously with a reasoning backbone
 
 ---
 
-### Training & System Highlights
+## 🔹 Problem Solved
+
+Most AI assistants struggle with:
+
+- Single-agent limitations
+- Poor emotional awareness
+- Difficulty managing complex conversations and task switching
+
+Jarvis addresses these challenges with **task-specific agents, emotional intelligence, and real-time voice processing**.
+
+---
+
+## 💡 Solution & Achievements
+
+Jarvis is built on **Hume AI** and integrates multiagent orchestration, real-time voice interaction, and persistent memory.
+
+**Achievements:**
+
+- Multiagent orchestration with **LangChain** and **Mistral** for real-time reasoning
+- Integration with **Hume Empathic Voice API** for emotion-adaptive behavior
+- Full voice interface using **Google STT/TTS** with <400ms latency via WebRTC
+- Persistent memory stored in **PostgreSQL** for long-term context and personalization
+
+---
+
+## 🧠 Training & System Highlights
+
+<details>
+<summary>Click to expand technical highlights</summary>
 
 **Multiagent Coordination:**  
-Used LangChain to build a routing system that delegates tasks to dedicated agents. Agents communicate through shared context and reasoning layers, allowing Jarvis to manage multiple goals at once.
+Agents communicate via shared context and reasoning layers, allowing Jarvis to manage multiple goals at once.
 
 **Emotion-Aware Interaction:**  
-Voice input is processed with Hume’s API to extract emotional signals. These signals influence agent routing, tone of response, and assistant behavior.
+Voice input is processed with Hume’s API to extract emotional signals, influencing agent routing, tone, and behavior.
 
 **Voice & Memory:**  
-Used Google STT and TTS for speech handling, with WebRTC enabling real-time audio. Memory is stored in PostgreSQL using vector-based indexing and recall.
+Real-time audio streaming via WebRTC, speech handling with Google STT/TTS, and vector-based memory storage in PostgreSQL.
+
+</details>
 
 ---
 
-### Technologies Used
+## 🛠️ Technologies Used
 
-- Python, LangChain, Mistral
-- Hume AI, Google STT/TTS
-- WebRTC, PostgreSQL, FastAPI
-- Docker, Streamlit (for testing)
+- **Languages & Frameworks:** Python, LangChain, Mistral
+- **Voice & Emotion:** Hume AI, Google STT/TTS, WebRTC
+- **Data & Backend:** PostgreSQL, FastAPI
+- **Deployment & Testing:** Docker, Streamlit
 
 ---
 
-### End Use Cases
+## 🎯 End Use Cases
 
 - Emotionally responsive assistant for productivity and daily tasks
 - Multi-tasking conversational agent for customer support
-- Voice-enabled agent for embedded or smart device platforms
+- Voice-enabled assistant for embedded or smart device platforms
 
 ---
 
-### References
+## 📚 References
 
 1. Wooldridge, M. (2009). *An Introduction to MultiAgent Systems* (2nd ed.). Wiley.
 2. Russell, S., & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson.
 3. Picard, R. W. (1997). *Affective Computing*. MIT Press.
-4. Ekman, P. (2003). *Emotions Revealed: Recognizing Faces and Feelings to Improve Communication and Emotional Life*. Times Books.
+4. Ekman, P. (2003). *Emotions Revealed*. Times Books.
 5. Minsky, M. (1986). *The Society of Mind*. Simon & Schuster.
 6. Jurafsky, D., & Martin, J. H. (2023). *Speech and Language Processing* (3rd ed., draft). Prentice Hall.
-7. Kepuska, V., & Bohouta, M. (2018). Next-generation of virtual personal assistants (Microsoft Cortana, Apple Siri, Amazon Alexa and Google Home). 2018 IEEE CCWC.
-8. Liu, B., et al. (2021). Towards Emotionally Intelligent Dialogue Systems. Proceedings of the 59th Annual Meeting of the ACL.
+7. Kepuska, V., & Bohouta, M. (2018). Next-generation virtual personal assistants. IEEE CCWC.
+8. Liu, B., et al. (2021). *Towards Emotionally Intelligent Dialogue Systems*. ACL Proceedings.  
